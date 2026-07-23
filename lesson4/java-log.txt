@@ -1,0 +1,25 @@
+Script started on 2026-07-23 12:12:00+03:00 [TERM="xterm-256color" TTY="/dev/pts/5" COLUMNS="100" LINES="52"]
+[?2004h]0;coder@Citdel-119Vi: ~/codeby-devops/lesson4[01;32mcoder@Citdel-119Vi[00m:[01;34m~/codeby-devops/lesson4[00m$ java--ver --ver[C[C[C[C[Csion 
+[?2004lopenjdk 21.0.11 2026-04-21
+OpenJDK Runtime Environment (build 21.0.11+10-1-22.04.2-Ubuntu)
+OpenJDK 64-Bit Server VM (build 21.0.11+10-1-22.04.2-Ubuntu, mixed mode, sharing)
+[?2004h]0;coder@Citdel-119Vi: ~/codeby-devops/lesson4[01;32mcoder@Citdel-119Vi[00m:[01;34m~/codeby-devops/lesson4[00m$ sudo update-alternatives --cong[Kfig java
+[?2004l[sudo] пароль для coder: 
+Есть 2 варианта для альтернативы java (предоставляет /usr/bin/java).
+
+  Выбор   Путь                                     Приор Состояние
+------------------------------------------------------------
+* 0            /usr/lib/jvm/java-21-openjdk-amd64/bin/java   2111      автоматический режим
+  1            /opt/jdk-26.0.1/bin/java                      1         ручной режим
+  2            /usr/lib/jvm/java-21-openjdk-amd64/bin/java   2111      ручной режим
+
+Нажмите «enter», чтобы не менять текущий выбор[*], или введите нужное число: 1
+update-alternatives: используется /opt/jdk-26.0.1/bin/java для предоставления /usr/bin/java (java) в ручном режиме
+[?2004h]0;coder@Citdel-119Vi: ~/codeby-devops/lesson4[01;32mcoder@Citdel-119Vi[00m:[01;34m~/codeby-devops/lesson4[00m$ sudo update-alternatives --config java[23Pjava --version 
+[?2004ljava 26.0.1 2026-04-21
+Java(TM) SE Runtime Environment (build 26.0.1+8-34)
+Java HotSpot(TM) 64-Bit Server VM (build 26.0.1+8-34, mixed mode, sharing)
+[?2004h]0;coder@Citdel-119Vi: ~/codeby-devops/lesson4[01;32mcoder@Citdel-119Vi[00m:[01;34m~/codeby-devops/lesson4[00m$ exit
+[?2004lexit
+
+Script done on 2026-07-23 12:13:13+03:00 [COMMAND_EXIT_CODE="0"]
