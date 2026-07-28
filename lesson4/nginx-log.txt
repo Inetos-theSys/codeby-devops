@@ -1,0 +1,37 @@
+Script started on 2026-07-28 15:52:16+03:00 [TERM="xterm-256color" TTY="/dev/pts/8" COLUMNS="112" LINES="24"]
+[?2004h]0;coder@Citdel-119Vi: ~/codeby-devops/lesson4[01;32mcoder@Citdel-119Vi[00m:[01;34m~/codeby-devops/lesson4[00m$ git push origin lesson4[K[5Pcommit[Cstatus[Ccommit[C[5@push origin[Clesson4[Kgit push origin lesson4[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[Ksystevm[K[Kmctl is[K[Kstatus my-nginx3
+[?2004l[?1h=○ my-nginx3.service - A high performance web server and a reverse proxy server[m
+     Loaded: loaded (/etc/systemd/system/my-nginx3.service; disabled; vendor preset: enabled)[m
+     Active: inactive (dead)[m
+       Docs: man:nginx(8)[m
+[K[?1l>[?2004h]0;coder@Citdel-119Vi: ~/codeby-devops/lesson4[01;32mcoder@Citdel-119Vi[00m:[01;34m~/codeby-devops/lesson4[00m$ systemctl status my-nginx3[3Pgit push origin lesson4systemctl status my-nginx3[Ksystemctl status my-nginx3[1P[1P[1P[1P[1@ [1@c[2@tl[C[1@i[C[1@s[1@-[1@-[1P[1P[1P[1P[1P[1P[1P my-nginx3e my-nginx3n my-nginx3abled my-nginx3
+[?2004ldisabled
+[?2004h]0;coder@Citdel-119Vi: ~/codeby-devops/lesson4[01;32mcoder@Citdel-119Vi[00m:[01;34m~/codeby-devops/lesson4[00m$ systemctl is-enabled my-nginx3[C[1P[1P[1P[C[C[C[C[C[C[1P my-nginx3[C[1@s[1@u[1@d[1@o[1@ 
+[?2004l[sudo] пароль для coder: 
+Created symlink /etc/systemd/system/multi-user.target.wants/my-nginx3.service → /etc/systemd/system/my-nginx3.service.
+[?2004h]0;coder@Citdel-119Vi: ~/codeby-devops/lesson4[01;32mcoder@Citdel-119Vi[00m:[01;34m~/codeby-devops/lesson4[00m$ sudo systemctl enable my-nginx3[1P[1P[1P[1P[1P[1P my-nginx3s my-nginx3t my-nginx3a my-nginx3r my-nginx3t my-nginx3
+[?2004l[?2004h]0;coder@Citdel-119Vi: ~/codeby-devops/lesson4[01;32mcoder@Citdel-119Vi[00m:[01;34m~/codeby-devops/lesson4[00m$ sudo systemctl start my-nginx3[1@enable[C[C[C[C[C[C[C[C[C[C[1Pystemctl is-enabled[C[C[C[C[C[C[C[C[C[C[4Pstatus[C[C[C[C[C[C[C[C[C[C
+[?2004l[?1h=[0;1;32m●[0m my-nginx3.service - A high performance web server and a reverse proxy server[m
+     Loaded: loaded (/etc/systemd/system/my-nginx3.service; enabled; vendor preset: enabled)[m
+     Active: [0;1;32mactive (running)[0m since Tue 2026-07-28 15:54:31 MSK; 4s ago[m
+       Docs: man:nginx(8)[m
+    Process: 10171 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/S[m[7m>[27m
+    Process: 10172 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)[m
+   Main PID: 10173 (nginx)[m
+      Tasks: 5 (limit: 4540)[m
+     Memory: 7.8M[m
+        CPU: 24ms[m
+     CGroup: /system.slice/my-nginx3.service[m
+             ├─10173 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[m
+             ├─10174 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" [m[7m>[27m
+             ├─10175 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" [m[7m>[27m
+             ├─10176 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" [m[7m>[27m
+             └─10177 "nginx: worker process" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" [m[7m>[27m
+[m
+июл 28 15:54:31 Citdel-119Vi systemd[1]: Starting A high performance web server and a reverse proxy server...[m
+июл 28 15:54:31 Citdel-119Vi systemd[1]: Started A high performance web server and a reverse proxy server.[m
+[7mlines 1-19/19 (END)[27m[K[K [KESCESC[KOO[KBB[K[K[7mlines 1-19/19 (END)[27m[K[K[K[7mlines 1-19/19 (END)[27m[K[K[?1l>
+[?2004h]0;coder@Citdel-119Vi: ~/codeby-devops/lesson4[01;32mcoder@Citdel-119Vi[00m:[01;34m~/codeby-devops/lesson4[00m$ exit
+[?2004lexit
+
+Script done on 2026-07-28 15:55:00+03:00 [COMMAND_EXIT_CODE="130"]
