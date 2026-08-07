@@ -10,12 +10,20 @@ Your Answer: 4096-2=4094 hosts (80.160.0.1 - 80.160.15 254)
 Your Answer: 182.144.10.6 (следующий - broadcast) 
 
 4.	IP address 10.145.100.6/27 is a part of which host range? 
-Your Answer: host range: 10.145.100.1 -10.145.100.30 (10.145.100.31 - broadcast!) 
+Your Answer: формально host range: 10.145.100.1 -10.145.100.31, но 10.145.100.31 - broadcast! 
 
     
 5.	How many IP addresses can be assigned to hosts, for Subnet Mask 255.255.255.0? 
-Your Answer: --- 
+Your Answer: 254 
+
+
 6.	If you need to have 5 subnets, which subnet mask do you use? 
-Your Answer: --- 
+Your Answer: В данном случае это будет зависеть какой исходный диапазон IP-адресов дан, все ли подсети должны быть одной "ёмкости".
+Если рассматривать случай сетей на 6 host'oв, то для каждой subnet маска /29 (2^3-2=6),   то общий ip-диапазон будет опрделяться маской /26
+(будет 8 подсетей,т.к . маска /27 даст только 4 подсети, а нужно 5  )
+
 7.	What is the broadcast address of prefix 172.18.16.0/21? 
-Your Answer: ---
+Your Answer: 172.18.23.254
+
+
+++++
